@@ -287,7 +287,7 @@ export default function HomeMilestone() {
   return (
     <section
       id="our-milestone"
-      className="scroll-mt-24 overflow-hidden bg-white py-16 sm:py-20 lg:py-24"
+      className="scroll-mt-24 overflow-hidden  pt-16 sm:pt-24 lg:pt-26"
     >
       <div className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-16 xl:px-20">
         {/* Section heading */}
@@ -362,7 +362,6 @@ export default function HomeMilestone() {
                 key={`${event.date}-${event.title}`}
                 className="group rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-300 hover:border-orange-200 hover:shadow-[0_12px_35px_-20px_rgba(15,23,42,0.25)] sm:p-7 lg:p-8"
               >
-                {/* Event date and title */}
                 <div className="mb-5 flex items-start gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-orange-600 transition-colors group-hover:bg-orange-500 group-hover:text-white">
                     <ArrowDownRight size={21} />
@@ -385,13 +384,12 @@ export default function HomeMilestone() {
                   </div>
                 </div>
 
-                {/* One image or multiple logos */}
                 <MilestoneImages images={event.images} title={event.title} />
               </article>
             ))}
           </div>
         ) : (
-          /* Empty state for years without event data */
+          /* Empty data */
           <div className="flex min-h-[250px] flex-col items-center justify-center rounded-3xl border border-dashed border-slate-200 bg-slate-50/70 px-6 py-12 text-center">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-slate-400 shadow-sm">
               <History size={25} />
