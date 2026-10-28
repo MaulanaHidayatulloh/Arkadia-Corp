@@ -176,16 +176,6 @@ export default function HomeAgency() {
       id="agency"
       className="slide-in relative overflow-hidden px-6 pt-22 sm:px-10 sm:pt-24 lg:pt-26 lg:px-18"
     >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-24 top-16 h-64 w-64 rounded-full border border-[#D7C4AE]/40"
-      />
-
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-[#E4D4C1]/30 blur-3xl"
-      />
-
       <div className="relative mx-auto max-w-7xl">
         {/* heading */}
         <div className="mb-10 text-center sm:mb-14">
