@@ -72,7 +72,7 @@ const slides = [
       "This part of works are professionally managed and executed mainly by our two units: Arkadia Production and Arkadia Event.",
     image: bgEvents,
     alt: "Arkadia event and production",
-    link: "#event-production",
+    link: "#events",
     button: "Discover Our Work",
   },
   {

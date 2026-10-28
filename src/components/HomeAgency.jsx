@@ -134,7 +134,6 @@ function AgencyModal({ service, onClose }) {
         onClick={(event) => event.stopPropagation()}
         className="relative w-full max-w-xl overflow-hidden rounded-2xl border border-orange-500 bg-orange-500 shadow-[0_30px_100px_rgba(0,0,0,0.25)] animate-[modalIn_250ms_ease-out]"
       >
-        {/* Close button */}
         <button
           type="button"
           onClick={onClose}
@@ -144,7 +143,6 @@ function AgencyModal({ service, onClose }) {
           ×
         </button>
 
-        {/* Full-width image */}
         <div className="h-44 w-full overflow-hidden bg-[#EFE3D5] sm:h-56">
           <img
             src={service.detailImage}
@@ -153,7 +151,6 @@ function AgencyModal({ service, onClose }) {
           />
         </div>
 
-        {/* Modal content */}
         <div className="p-5 sm:p-7">
           <h2
             id="agency-modal-title"
