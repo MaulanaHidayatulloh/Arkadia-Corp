@@ -1,6 +1,8 @@
 import HomeHero from "../components/HomeHero";
 import HomeMilestone from "../components/HomeMilestone";
 import HomeOurMedia from "../components/HomeOurMedia";
+import HomeCommunity from "../components/HomeCommunity";
+import HomeAgency from "../components/HomeAgency";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <HomeHero />
       <HomeMilestone />
       <HomeOurMedia />
+      <HomeCommunity />
+      <HomeAgency />
     </main>
   );
 }

@@ -327,7 +327,7 @@ export default function HomeMilestone() {
                   type="button"
                   aria-pressed={isActive}
                   onClick={() => setActiveYear(milestone.year)}
-                  className="group flex min-w-[66px] shrink-0 flex-col items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-4"
+                  className="group flex cursor-pointer min-w-[66px] shrink-0 flex-col items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-4"
                 >
                   <span
                     className={`relative z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 text-xs font-bold transition-all duration-300 ${
@@ -336,17 +336,7 @@ export default function HomeMilestone() {
                         : "border-slate-200 bg-white text-slate-500 group-hover:border-orange-300 group-hover:text-orange-600"
                     }`}
                   >
-                    {String(milestone.year).slice(-2)}
-                  </span>
-
-                  <span
-                    className={`text-xs font-semibold transition-colors ${
-                      isActive
-                        ? "text-orange-600"
-                        : "text-slate-500 group-hover:text-slate-900"
-                    }`}
-                  >
-                    {milestone.year}
+                    {String(milestone.year)}
                   </span>
                 </button>
               );

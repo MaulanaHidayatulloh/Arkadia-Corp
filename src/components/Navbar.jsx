@@ -17,7 +17,7 @@ export default function Navbar() {
         <NavLink
           to="/"
           aria-label="Arkadia Digital Media - Home"
-          className="shrink-0 transition-opacity hover:opacity-80"
+          className="shrink-0 transition-opacity"
         >
           <img
             src={arkadiaLogo}

@@ -162,7 +162,6 @@ export default function HomeHero() {
 
           <h1 className="max-w-3xl text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             {activeSlide.title}
-            <span className="text-orange-400">.</span>
           </h1>
 
           <p className="mt-4 max-w-2xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8 lg:text-xl">

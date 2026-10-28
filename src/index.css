@@ -21,3 +21,9 @@ html {
 body {
   margin: 0;
 }
+
+@layer utilities {
+  .text-outline-1 {
+    -webkit-text-stroke: 0.2px black;
+  }
+}

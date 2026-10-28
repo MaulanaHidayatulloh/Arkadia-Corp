@@ -89,7 +89,6 @@ function MediaCard({ media }) {
         className="absolute inset-0 h-full w-full object-containt transition-transform duration-500 group-hover:scale-105"
       />
 
-      {/* Featured label */}
       {isFeatured && (
         <div className="relative z-10 p-4 sm:p-6">
           <span className="inline-flex rounded-full border border-white/30 bg-orange-500 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm sm:text-[10px]">
@@ -98,9 +97,8 @@ function MediaCard({ media }) {
         </div>
       )}
 
-      {/* Media name and link */}
       <div className="relative z-10 mt-auto flex items-center justify-between gap-3 p-4 sm:p-5">
-        <span className="text-xs text-white font-semibold drop-shadow-sm sm:text-sm">
+        <span className="text-xs text-outline-1 text-white font-semibold drop-shadow-sm sm:text-sm">
           {media.name}
         </span>
 
@@ -145,19 +143,19 @@ export default function HomeOurMedia() {
       className="slide-in relative overflow-hidden px-6 pt-22 sm:px-10 sm:pt-24 lg:px-18 lg:pt-26"
     >
       <div className="relative mx-auto max-w-7xl">
-        {/* Centered heading */}
+        {/* heading */}
         <div className="mb-10 text-center sm:mb-14">
           <div className="mb-4 flex items-center justify-center gap-3">
-            <span className="h-px w-8 bg-[#A47B51] sm:w-12" />
+            <span className="h-px w-8 bg-orange-500 sm:w-12" />
 
-            <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#916C47] sm:text-xs">
-              Arkadia Digital Media
+            <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-orange-500 sm:text-xs">
+              DIGITAL PUBLISHING
             </span>
 
-            <span className="h-px w-8 bg-[#A47B51] sm:w-12" />
+            <span className="h-px w-8 bg-orange-500 sm:w-12" />
           </div>
 
-          <h2 className="text-4xl font-bold tracking-[-0.045em] text-[#412001] sm:text-5xl lg:text-6xl">
+          <h2 className="text-4xl font-bold tracking-[-0.045em] text-slate-900 sm:text-5xl lg:text-6xl">
             Our Media
           </h2>
         </div>
