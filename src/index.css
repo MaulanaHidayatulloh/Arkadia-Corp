@@ -27,3 +27,14 @@ body {
     -webkit-text-stroke: 0.2px black;
   }
 }
+
+@keyframes nexusFloat {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(8px);
+  }
+}
