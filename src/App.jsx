@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import PlaceholderPage from "./pages/PlaceholderPage";
 
@@ -46,6 +47,8 @@ function SiteLayout() {
 
         <Route path="*" element={<PlaceholderPage title="Page Not Found" />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }
