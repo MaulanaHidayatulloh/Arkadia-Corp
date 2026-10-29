@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import bgWelcome from "../assets/images/bg-welcome.webp";
 import bgOurMedia from "../assets/images/bg-ourmedia.webp";

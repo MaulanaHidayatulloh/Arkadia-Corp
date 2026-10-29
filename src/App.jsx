@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import PlaceholderPage from "./pages/PlaceholderPage";
 
 const investorPages = [
@@ -21,7 +22,7 @@ function SiteLayout() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<PlaceholderPage title="About" />} />
+        <Route path="/about" element={<About />} />
         <Route
           path="/business"
           element={<PlaceholderPage title="Business" />}

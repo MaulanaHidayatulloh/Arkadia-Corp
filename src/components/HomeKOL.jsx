@@ -73,10 +73,10 @@ export default function HomeKOL() {
             </div>
           </div>
 
-          {/* Information and statistics */}
+          {/* Information & statistics */}
           <div>
             <div className="mb-9">
-              <h3 className="max-w-xl text-2xl font-semibold leading-tight tracking-tight text-black sm:text-3xl md:text-4xl">
+              <h3 className="max-w-xl text-2xl font-semibold leading-tight tracking-tight text-orange-500 sm:text-3xl md:text-4xl">
                 Nexus Creator Hub
               </h3>
 
@@ -100,7 +100,6 @@ export default function HomeKOL() {
               </a>
             </div>
 
-            {/* Statistics */}
             <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
               {kolStats.map((stat, index) => (
                 <div
