@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-
 import stephenImage from "../assets/images/about1.webp";
 import iwaImage from "../assets/images/about2.webp";
 import ariyoImage from "../assets/images/about3.webp";
 import suwarjonoImage from "../assets/images/about4.webp";
-import popiImage from "../assets/images/popi.jpg";
+import popiImage from "../assets/images/popi.webp";
 
 const leaders = [
   {
@@ -50,7 +49,7 @@ export default function AboutKeyManagement() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [selectedLeader, setSelectedLeader] = useState(null);
 
-  // Update active indicator based on the card nearest the carousel center
+  // Update active indicator
   const handleScroll = () => {
     const container = carouselRef.current;
     if (!container) return;
@@ -84,7 +83,7 @@ export default function AboutKeyManagement() {
     setActiveIndex(closestIndex);
   };
 
-  // Scroll to a selected card through the indicators
+  // Scroll to a selected card
   const scrollToCard = (index) => {
     const container = carouselRef.current;
     if (!container) return;
@@ -109,7 +108,7 @@ export default function AboutKeyManagement() {
     });
   };
 
-  // Close modal with Escape and prevent background scrolling
+  // Close modal
   useEffect(() => {
     if (!selectedLeader) return;
 
@@ -149,7 +148,7 @@ export default function AboutKeyManagement() {
           </div>
         </div>
 
-        {/* Horizontal carousel */}
+        {/* carousel */}
         <div
           ref={carouselRef}
           onScroll={handleScroll}
@@ -169,7 +168,6 @@ export default function AboutKeyManagement() {
                 aria-label={`View details for ${leader.name}`}
                 className="group w-[76vw] max-w-[300px] shrink-0 snap-start cursor-pointer text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#F05825] sm:w-[300px] md:w-[320px] lg:w-[340px]"
               >
-                {/* Portrait */}
                 <div className="relative aspect-[4/4.5] overflow-hidden bg-[#E8DFD2]">
                   <img
                     src={leader.image}
@@ -282,7 +280,6 @@ export default function AboutKeyManagement() {
                 }}
                 onClick={(event) => event.stopPropagation()}
               >
-                {/* Modal portrait */}
                 <div className="relative min-h-[240px] sm:min-h-[480px]">
                   <img
                     src={selectedLeader.image}
@@ -295,7 +292,6 @@ export default function AboutKeyManagement() {
 
                 {/* Modal information */}
                 <div className="relative flex flex-col p-6 sm:p-8 lg:p-10">
-                  {/* Close icon */}
                   <button
                     type="button"
                     onClick={() => setSelectedLeader(null)}

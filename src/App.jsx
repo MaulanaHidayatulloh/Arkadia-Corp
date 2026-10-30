@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Business from "./pages/Business";
 import PlaceholderPage from "./pages/PlaceholderPage";
 
 const investorPages = [
@@ -23,10 +24,7 @@ function SiteLayout() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route
-          path="/business"
-          element={<PlaceholderPage title="Business" />}
-        />
+        <Route path="/business" element={<Business />} />
         <Route path="/career" element={<PlaceholderPage title="Career" />} />
         <Route
           path="/contact"

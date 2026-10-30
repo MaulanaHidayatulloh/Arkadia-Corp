@@ -93,7 +93,7 @@ export default function AboutEssence() {
       className="relative overflow-hidden py-12 sm:py-16 md:py-20"
     >
       <div className="mx-auto max-w-[1600px]">
-        {/* Section Heading */}
+        {/* Heading */}
         <div className="mb-10 flex flex-col justify-between gap-5 px-5 sm:px-8 md:mb-14 lg:flex-row lg:items-end lg:px-14">
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -198,7 +198,7 @@ export default function AboutEssence() {
                 type="button"
                 onClick={previousSlide}
                 aria-label="Previous slide"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-[#412001]/20 text-[#412001] transition-all duration-300 hover:border-[#F05825] hover:bg-[#F05825] hover:text-white sm:h-11 sm:w-11"
+                className="flex cursor-pointer h-10 w-10 items-center justify-center rounded-full border border-[#412001]/20 text-[#412001] transition-all duration-300 hover:border-[#F05825] hover:bg-[#F05825] hover:text-white sm:h-11 sm:w-11"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -219,7 +219,7 @@ export default function AboutEssence() {
                 type="button"
                 onClick={nextSlide}
                 aria-label="Next slide"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-[#412001]/20 text-[#412001] transition-all duration-300 hover:border-[#F05825] hover:bg-[#F05825] hover:text-white sm:h-11 sm:w-11"
+                className="flex cursor-pointer h-10 w-10 items-center justify-center rounded-full border border-[#412001]/20 text-[#412001] transition-all duration-300 hover:border-[#F05825] hover:bg-[#F05825] hover:text-white sm:h-11 sm:w-11"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -237,7 +237,6 @@ export default function AboutEssence() {
               </button>
             </div>
 
-            {/* Slide Indicators */}
             <div className="flex items-center gap-3 sm:gap-4">
               <div className="flex items-center gap-2">
                 {essenceSlides.map((slide, index) => (
@@ -247,7 +246,7 @@ export default function AboutEssence() {
                     onClick={() => scrollToSlide(index)}
                     aria-label={`Go to ${slide.title}`}
                     aria-current={activeIndex === index ? "true" : undefined}
-                    className={`h-[3px] rounded-full transition-all duration-300 ${
+                    className={`h-[4px] cursor-pointer rounded-full transition-all duration-300 ${
                       activeIndex === index
                         ? "w-8 bg-[#F05825] sm:w-9"
                         : "w-3 bg-[#412001]/20 hover:bg-[#412001]/50 sm:w-4"
