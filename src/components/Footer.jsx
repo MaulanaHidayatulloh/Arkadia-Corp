@@ -1,19 +1,6 @@
 import { Link } from "react-router-dom";
 import footerBackground from "../assets/images/footer.webp";
 
-const ArrowUpRight = () => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.7"
-    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-    aria-hidden="true"
-  >
-    <path d="M7 17 17 7M7 7h10v10" />
-  </svg>
-);
-
 const ContactIcon = ({ type }) => {
   const paths = {
     location: (
@@ -60,7 +47,7 @@ const socialLinks = [
   {
     name: "X",
     label: "X / Twitter",
-    href: null,
+    href: "https://x.com/suaradotcom",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
         <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l7.3-8.4L1.8 2h6.5l4.5 6.8L18.9 2Zm-1.1 17.8h1.7L7.3 4.1H5.5l12.3 15.7Z" />
@@ -70,7 +57,7 @@ const socialLinks = [
   {
     name: "Facebook",
     label: "Facebook",
-    href: null,
+    href: "https://www.facebook.com/suaradotcom/",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
         <path d="M13.5 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.8 1.8-1.8h1.9V2.4c-.9-.1-1.8-.2-2.7-.2-2.7 0-4.6 1.7-4.6 4.8v2.5H7V13h2.9v9h3.6Z" />
@@ -80,7 +67,7 @@ const socialLinks = [
   {
     name: "YouTube",
     label: "YouTube",
-    href: null,
+    href: "https://www.youtube.com/@suaradotcom",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
         <path d="M23 7a3 3 0 0 0-2.1-2.1C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7a31 31 0 0 0-.5 5 31 31 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5A3 3 0 0 0 23 17a31 31 0 0 0 .5-5 31 31 0 0 0-.5-5ZM9.6 15.5v-7l6.1 3.5-6.1 3.5Z" />
@@ -90,7 +77,7 @@ const socialLinks = [
   {
     name: "LinkedIn",
     label: "LinkedIn",
-    href: null,
+    href: "https://id.linkedin.com/company/suara-com",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
         <path d="M5.2 3a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4ZM3.3 9h3.8v12H3.3V9Zm6.2 0h3.6v1.6h.1A4 4 0 0 1 16.8 8c4 0 4.7 2.6 4.7 6V21h-3.8v-6.2c0-1.5 0-3.5-2.2-3.5s-2.5 1.7-2.5 3.4V21H9.5V9Z" />
@@ -203,6 +190,8 @@ export default function Footer() {
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href={social.href || undefined}
                   aria-label={social.label}
                   aria-disabled={!social.href}

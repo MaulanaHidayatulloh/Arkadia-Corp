@@ -211,7 +211,7 @@ export default function AboutKeyManagement() {
                 aria-label={`Go to ${leader.name}`}
                 aria-current={activeIndex === index ? "true" : undefined}
                 onClick={() => scrollToCard(index)}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
+                className={`h-1.5 cursor-pointer rounded-full transition-all duration-300 ${
                   activeIndex === index
                     ? "w-8 bg-[#F05825]"
                     : "w-3 bg-[#412001]/20 hover:bg-[#F05825]/50"
@@ -222,13 +222,13 @@ export default function AboutKeyManagement() {
 
           <p className="text-xs font-medium tracking-wider text-[#786D62]">
             {String(activeIndex + 1).padStart(2, "0")}{" "}
-            <span className="mx-1 text-[#F05825]">/</span>{" "}
+            <span className="mx-1 text-black/50">/</span>{" "}
             {String(leaders.length).padStart(2, "0")}
           </p>
         </div>
       </div>
 
-      {/* Carousel scrollbar styling */}
+      {/* scrollbar styling */}
       <style>{`
         #key-management [data-leader-card] {
           -webkit-tap-highlight-color: transparent;
@@ -240,7 +240,7 @@ export default function AboutKeyManagement() {
 
         .management-modal-scroll {
           scrollbar-width: thin;
-          scrollbar-color: #C7B9A8 transparent;
+          scrollbar-color: gray transparent;
           -webkit-overflow-scrolling: touch;
         }
 
@@ -253,7 +253,7 @@ export default function AboutKeyManagement() {
         }
 
         .management-modal-scroll::-webkit-scrollbar-thumb {
-          background: #C7B9A8;
+          background: gray;
           border-radius: 999px;
           border: 1px solid #F5F0E8;
         }
@@ -276,14 +276,14 @@ export default function AboutKeyManagement() {
                 role="dialog"
                 aria-modal="true"
                 aria-labelledby="management-modal-name"
-                className="management-modal-scroll relative my-auto grid w-full max-w-4xl grid-cols-1 overflow-y-auto overscroll-contain bg-[#F5F0E8] shadow-2xl sm:grid-cols-2"
+                className="management-modal-scroll relative my-auto grid w-full max-w-4xl grid-cols-1 overflow-y-auto overscroll-contain bg-white shadow-2xl sm:grid-cols-2"
                 style={{
                   maxHeight: "calc(100dvh - 3rem)",
                 }}
                 onClick={(event) => event.stopPropagation()}
               >
                 {/* Modal portrait */}
-                <div className="relative min-h-[240px] bg-[#E8DFD2] sm:min-h-[480px]">
+                <div className="relative min-h-[240px] sm:min-h-[480px]">
                   <img
                     src={selectedLeader.image}
                     alt={selectedLeader.name}
@@ -300,14 +300,10 @@ export default function AboutKeyManagement() {
                     type="button"
                     onClick={() => setSelectedLeader(null)}
                     aria-label="Close profile"
-                    className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center border border-[#412001]/15 bg-[#F5F0E8] text-2xl text-[#412001] transition-colors hover:bg-[#F05825] hover:text-white"
+                    className="hidden md:flex absolute rounded-xl right-4 top-4 z-10 h-10 w-10 items-center justify-center border border-black bg-white text-2xl text-black text-bold transition-colors hover:bg-[#F05825] hover:text-white hover:border-0"
                   >
                     ×
                   </button>
-
-                  <p className="mb-4 pr-10 text-xs font-bold uppercase tracking-[0.24em] text-[#F05825]">
-                    Key Management
-                  </p>
 
                   <h3
                     id="management-modal-name"
@@ -316,11 +312,11 @@ export default function AboutKeyManagement() {
                     {selectedLeader.name}
                   </h3>
 
-                  <p className="mt-4 text-sm font-medium leading-6 text-[#B65A2A] sm:text-base">
+                  <p className="mt-2 text-sm font-medium leading-6 text-[#B65A2A] sm:text-base">
                     {selectedLeader.position}
                   </p>
 
-                  <div className="mt-7 h-px w-16 shrink-0 bg-[#F05825]" />
+                  <div className="mt-4 h-px w-[100%] shrink-0 bg-black/20" />
 
                   <p className="mt-6 whitespace-pre-line text-sm leading-7 text-[#6F655B]">
                     {selectedLeader.description}
@@ -329,7 +325,7 @@ export default function AboutKeyManagement() {
                   <button
                     type="button"
                     onClick={() => setSelectedLeader(null)}
-                    className="mt-8 self-start bg-[#412001] px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#F05825]"
+                    className="mt-6 self-start bg-white border border-black rounded-lg px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-black transition-colors hover:bg-[#F05825] hover:text-white hover:border-[#F05825]"
                   >
                     Close Profile
                   </button>
