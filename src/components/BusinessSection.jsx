@@ -28,7 +28,7 @@ const businesses = [
 const BusinessSection = () => {
   const [selectedBusiness, setSelectedBusiness] = useState(null);
 
-  // Close modal with Escape and prevent background scrolling
+  // Close modal with Escape
   useEffect(() => {
     if (!selectedBusiness) return;
 
@@ -80,7 +80,6 @@ const BusinessSection = () => {
                 aria-label={`View ${business.name}`}
                 className="group cursor-pointer rounded-2xl relative flex min-h-[250px] flex-col justify-center overflow-hidden border border-black/20 bg-white py-5 px-7 text-left transition-all duration-500 hover:border-orange-500 hover:shadow-xl sm:min-h-[300px] lg:min-h-[350px]"
               >
-                {/* Business Logo */}
                 <div className="flex flex-1 items-center justify-center py-7">
                   <img
                     src={business.logo}
@@ -89,7 +88,6 @@ const BusinessSection = () => {
                   />
                 </div>
 
-                {/* Bottom Information */}
                 <div className="flex items-center justify-between border-t border-black/30 pt-5">
                   <h3 className="text-lg font-semibold text-[#412001] sm:text-xl">
                     {business.name}
@@ -100,7 +98,6 @@ const BusinessSection = () => {
                   </span>
                 </div>
 
-                {/* Hover Accent */}
                 <div className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#F05825] transition-all duration-500 group-hover:w-full" />
               </button>
             ))}
@@ -119,10 +116,9 @@ const BusinessSection = () => {
             role="dialog"
             aria-modal="true"
             aria-labelledby="business-modal-title"
-            className="relative rounded-3xl my-auto w-full max-w-[650px] overflow-hidden bg-white shadow-2xl animate-[modalFadeIn_0.3s_ease-out]"
+            className="relative rounded-3xl my-auto w-full max-w-[900px] overflow-hidden bg-white shadow-2xl animate-[modalFadeIn_0.3s_ease-out]"
             onClick={(event) => event.stopPropagation()}
           >
-            {/* Close Button */}
             <button
               type="button"
               onClick={() => setSelectedBusiness(null)}

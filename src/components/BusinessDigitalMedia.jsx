@@ -26,7 +26,6 @@ const BusinessDigitalMedia = () => {
 
         {/* Image & Description */}
         <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2 lg:gap-14">
-          {/* Image */}
           <div className="relative min-h-[320px] self-stretch overflow-hidden sm:min-h-[420px] lg:min-h-0">
             <img
               src={businessImage}
@@ -34,7 +33,7 @@ const BusinessDigitalMedia = () => {
               className="absolute inset-0 h-full w-full object-center"
             />
 
-            {/* Established Ribbon */}
+            {/* Established */}
             <div className="absolute bottom-6 left-0 sm:bottom-8">
               <div className="border-l-[7px] border-black">
                 <div className="relative bg-orange-500 px-6 py-4 shadow-lg sm:px-7 sm:py-5">
@@ -49,7 +48,6 @@ const BusinessDigitalMedia = () => {
                   </div>
                 </div>
 
-                {/* Ribbon Tail */}
                 <div className="absolute -right-5 top-0 h-full w-5 bg-orange-500 [clip-path:polygon(0_0,100%_25%,100%_75%,0_100%)]" />
               </div>
             </div>
