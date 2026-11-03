@@ -4,17 +4,16 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Business from "./pages/Business";
+// import Career from "./pages/Career";
+// import Contact from "./pages/Contact";
+import CompanyPresentation from "./pages/CompanyPresentation";
+import GeneralMeetings from "./pages/GeneralMeetings";
+import DisclosureInformation from "./pages/DisclosureInformation";
+import AnnualReport from "./pages/AnnualReport";
+import FinancialReport from "./pages/FinancialReport";
+import Prospectus from "./pages/Prospectus";
+import PressRelease, { PressReleaseDetail } from "./pages/PressRelease";
 import PlaceholderPage from "./pages/PlaceholderPage";
-
-const investorPages = [
-  ["company-presentation", "Company Presentation"],
-  ["general-meetings", "General Meetings"],
-  ["disclosure-of-information", "The Disclosure of Information"],
-  ["annual-report", "Annual Report"],
-  ["financial-report", "Financial Report"],
-  ["prospectus", "Prospectus"],
-  ["press-release", "Press Release"],
-];
 
 function SiteLayout() {
   return (
@@ -25,26 +24,51 @@ function SiteLayout() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/business" element={<Business />} />
-        <Route path="/career" element={<PlaceholderPage title="Career" />} />
-        <Route
-          path="/contact"
-          element={<PlaceholderPage title="Contact Us" />}
-        />
+
+        {/* <Route path="/career" element={<Career />} /> */}
+        {/* <Route path="/contact" element={<Contact />} /> */}
 
         <Route
           path="/investor-relations"
           element={<PlaceholderPage title="Investor Relations" />}
         />
 
-        {investorPages.map(([slug, title]) => (
-          <Route
-            key={slug}
-            path={`/investor-relations/${slug}`}
-            element={<PlaceholderPage title={title} />}
-          />
-        ))}
+        <Route
+          path="/investor-relations/company-presentation"
+          element={<CompanyPresentation />}
+        />
 
-        <Route path="*" element={<PlaceholderPage title="Page Not Found" />} />
+        <Route
+          path="/investor-relations/general-meetings"
+          element={<GeneralMeetings />}
+        />
+
+        <Route
+          path="/investor-relations/disclosure-of-information"
+          element={<DisclosureInformation />}
+        />
+
+        <Route
+          path="/investor-relations/annual-report"
+          element={<AnnualReport />}
+        />
+
+        <Route
+          path="/investor-relations/financial-report"
+          element={<FinancialReport />}
+        />
+
+        <Route path="/investor-relations/prospectus" element={<Prospectus />} />
+
+        <Route
+          path="/investor-relations/press-release"
+          element={<PressRelease />}
+        />
+
+        <Route
+          path="/investor-relations/press-release/:id"
+          element={<PressReleaseDetail />}
+        />
       </Routes>
 
       <Footer />

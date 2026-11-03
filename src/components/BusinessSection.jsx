@@ -51,7 +51,7 @@ const BusinessSection = () => {
 
   return (
     <>
-      <section className="py-10 sm:py-15 lg:py-20">
+      <section className="py-16">
         <div className="mx-auto max-w-[1500px] px-6 sm:px-10 lg:px-18">
           {/* heading */}
           <div className="mb-10 text-center sm:mb-14">
