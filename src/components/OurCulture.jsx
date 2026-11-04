@@ -22,7 +22,7 @@ export default function OurCulture() {
             </span>
           </div>
 
-          <h1 className="font-serif text-5xl font-normal leading-[1.1] tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="font-serif text-5xl font-semibold leading-[1.1] tracking-tight text-white sm:text-6xl lg:text-7xl">
             Our Culture
           </h1>
 

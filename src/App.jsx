@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Business from "./pages/Business";
 import Career from "./pages/Career";
-// import Contact from "./pages/Contact";
+import Contact from "./pages/Contact";
 import CompanyPresentation from "./pages/CompanyPresentation";
 import GeneralMeetings from "./pages/GeneralMeetings";
 import DisclosureInformation from "./pages/DisclosureInformation";
@@ -13,7 +13,6 @@ import AnnualReport from "./pages/AnnualReport";
 import FinancialReport from "./pages/FinancialReport";
 import Prospectus from "./pages/Prospectus";
 import PressRelease, { PressReleaseDetail } from "./pages/PressRelease";
-import PlaceholderPage from "./pages/PlaceholderPage";
 
 function SiteLayout() {
   return (
@@ -24,14 +23,13 @@ function SiteLayout() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/business" element={<Business />} />
-
         <Route path="/career" element={<Career />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
 
-        <Route
+        {/* <Route
           path="/investor-relations"
           element={<PlaceholderPage title="Investor Relations" />}
-        />
+        /> */}
 
         <Route
           path="/investor-relations/company-presentation"

@@ -38,7 +38,7 @@ export default function WhatMakesUsDifferent() {
         {/* Heading */}
         <div className="mb-8 flex flex-col justify-between gap-8 lg:mb-16 lg:flex-row lg:items-end">
           <div>
-            <h2 className="max-w-2xl font-serif text-4xl font-normal leading-tight text-black sm:text-5xl lg:text-7xl">
+            <h2 className="max-w-2xl font-serif text-4xl font-semibold leading-tight text-black sm:text-5xl lg:text-7xl">
               What Makes Us
               <br />
               <span className="italic text-orange-500">Different</span>

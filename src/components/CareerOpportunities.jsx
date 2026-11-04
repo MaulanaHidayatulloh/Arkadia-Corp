@@ -22,7 +22,7 @@ export default function CareerOpportunities() {
         {/* Heading */}
         <div className="mb-8 flex flex-col justify-between gap-8 lg:mb-16 lg:flex-row lg:items-end">
           <div>
-            <h2 className="font-serif text-5xl font-normal leading-tight text-black sm:text-6xl lg:text-7xl">
+            <h2 className="font-serif text-5xl font-semibold leading-tight text-black sm:text-6xl lg:text-7xl">
               Career
               <br />
               <span className="italic text-orange-500">Opportunities</span>
