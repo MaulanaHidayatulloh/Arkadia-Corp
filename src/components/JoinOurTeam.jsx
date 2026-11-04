@@ -29,7 +29,7 @@ export default function JoinOurTeam() {
             className="group/link mt-10 inline-flex items-center gap-5 border-b-2 border-white pb-3 text-sm font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:text-orange-300 hover:border-orange-300"
           >
             Explore Opportunities
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-white transition-transform duration-300 group-hover/link:rotate-45 group-hover:bg-orange-300">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-white transition-transform duration-300 group-hover/link:rotate-45 group-hover/link:bg-orange-300">
               <ArrowUpRight size={20} />
             </span>
           </a>
