@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Business from "./pages/Business";
-// import Career from "./pages/Career";
+import Career from "./pages/Career";
 // import Contact from "./pages/Contact";
 import CompanyPresentation from "./pages/CompanyPresentation";
 import GeneralMeetings from "./pages/GeneralMeetings";
@@ -25,7 +25,7 @@ function SiteLayout() {
         <Route path="/about" element={<About />} />
         <Route path="/business" element={<Business />} />
 
-        {/* <Route path="/career" element={<Career />} /> */}
+        <Route path="/career" element={<Career />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
 
         <Route
