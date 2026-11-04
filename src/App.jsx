@@ -13,6 +13,7 @@ import AnnualReport from "./pages/AnnualReport";
 import FinancialReport from "./pages/FinancialReport";
 import Prospectus from "./pages/Prospectus";
 import PressRelease, { PressReleaseDetail } from "./pages/PressRelease";
+import NotFound from "./pages/NotFound";
 
 function SiteLayout() {
   return (
@@ -67,6 +68,8 @@ function SiteLayout() {
           path="/investor-relations/press-release/:id"
           element={<PressReleaseDetail />}
         />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
