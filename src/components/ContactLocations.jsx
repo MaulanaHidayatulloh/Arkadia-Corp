@@ -58,7 +58,6 @@ export default function ContactLocations() {
               key={office.number}
               className="group overflow-hidden rounded-2xl border border-black/20 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-5"
             >
-              {/* Image */}
               <div className="relative aspect-[16/10] overflow-hidden rounded-xl">
                 <img
                   src={office.image}

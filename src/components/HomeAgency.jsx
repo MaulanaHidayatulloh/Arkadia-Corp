@@ -132,7 +132,7 @@ function AgencyModal({ service, onClose }) {
         aria-modal="true"
         aria-labelledby="agency-modal-title"
         onClick={(event) => event.stopPropagation()}
-        className="relative w-full max-w-xl overflow-hidden rounded-2xl border border-orange-500 bg-orange-500 shadow-[0_30px_100px_rgba(0,0,0,0.25)] animate-[modalIn_250ms_ease-out]"
+        className="relative w-full max-w-xl overflow-hidden rounded-2xl border border-black bg-[#FAF9F6] shadow-[0_30px_100px_rgba(0,0,0,0.25)] animate-[modalIn_250ms_ease-out]"
       >
         <button
           type="button"
@@ -154,12 +154,12 @@ function AgencyModal({ service, onClose }) {
         <div className="p-5 sm:p-7">
           <h2
             id="agency-modal-title"
-            className="mt-2 text-xl font-bold tracking-tight text-white sm:text-2xl"
+            className="mt-2 text-xl font-bold tracking-tight text-black sm:text-2xl"
           >
             {service.title}
           </h2>
 
-          <p className="mt-3 text-sm leading-6 text-white/90 sm:leading-7">
+          <p className="mt-3 text-sm leading-6 text-black/70 sm:leading-7">
             {service.detail}
           </p>
         </div>
