@@ -40,7 +40,7 @@ const footerLinks = [
   { label: "About", to: "/about" },
   { label: "Business", to: "/business" },
   { label: "Career", to: "/career" },
-  { label: "Contact Us", to: "/contactus" },
+  { label: "Contact Us", to: "/contact" },
 ];
 
 const socialLinks = [
