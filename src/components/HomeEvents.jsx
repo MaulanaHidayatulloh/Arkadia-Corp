@@ -258,7 +258,7 @@ export default function HomeEvents() {
             type="button"
             onClick={() => goTo(-1)}
             aria-label="Event sebelumnya"
-            className="absolute left-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-orange-500 text-white shadow-lg backdrop-blur-md transition duration-300 hover:scale-110 hover:border-[#F05825] hover:bg-orange-600 sm:left-5 sm:h-12 sm:w-12 lg:left-8"
+            className="absolute left-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-orange-500 text-white shadow-lg backdrop-blur-md transition duration-300 hover:scale-110 hover:border-[#F05825] hover:bg-orange-600 sm:left-5 sm:h-12 sm:w-12 lg:left-8 cursor-pointer"
           >
             <svg
               viewBox="0 0 24 24"
@@ -293,7 +293,7 @@ export default function HomeEvents() {
             type="button"
             onClick={() => goTo(1)}
             aria-label="Event berikutnya"
-            className="absolute right-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-orange-500 text-white shadow-lg backdrop-blur-md transition duration-300 hover:scale-110 hover:border-[#F05825] hover:bg-orange-600 sm:right-5 sm:h-12 sm:w-12 lg:right-8"
+            className="absolute right-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-orange-500 text-white shadow-lg backdrop-blur-md transition duration-300 hover:scale-110 hover:border-[#F05825] hover:bg-orange-600 sm:right-5 sm:h-12 sm:w-12 lg:right-8 cursor-pointer"
           >
             <svg
               viewBox="0 0 24 24"

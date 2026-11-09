@@ -88,7 +88,7 @@ function AgencyCard({ service, onClick }) {
         </p>
       </div>
 
-      <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#F05825] transition-all duration-500 group-hover:w-full" />
+      <div className="absolute bottom-0 left-0 h-1 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full" />
     </button>
   );
 }
@@ -138,7 +138,7 @@ function AgencyModal({ service, onClose }) {
           type="button"
           onClick={onClose}
           aria-label="Close popup"
-          className="absolute cursor-pointer right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-2xl leading-none text-white shadow-sm hover:bg-black hover:text-white sm:right-4 sm:top-4"
+          className="absolute cursor-pointer right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-2xl leading-none text-white shadow-sm hover:bg-orange-700 hover:text-white sm:right-4 sm:top-4"
         >
           ×
         </button>

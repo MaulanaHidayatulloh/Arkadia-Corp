@@ -196,7 +196,7 @@ export default function FinancialReport() {
                 className={`min-w-[90px] cursor-pointer rounded-xl px-5 py-3 text-sm font-bold transition-all duration-300 ${
                   selectedYear === year
                     ? "bg-orange-500 text-white shadow-md"
-                    : "border border-black bg-white text-black hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+                    : "border border-black/30 bg-white text-black hover:border-orange-500 hover:bg-orange-500 hover:text-white"
                 }`}
               >
                 {year}
@@ -223,7 +223,7 @@ export default function FinancialReport() {
               {documents.map((document) => (
                 <article
                   key={document.file}
-                  className="group relative overflow-hidden rounded-2xl border border-black/8 bg-[#FAF9F7] transition-all duration-300 hover:border-orange-500 hover:shadow-[0_15px_45px_-20px_rgba(65,32,1,0.18)]"
+                  className="group relative overflow-hidden rounded-2xl border border-black/20 bg-white transition-all duration-300 hover:border-orange-500 hover:shadow-[0_15px_45px_-20px_rgba(65,32,1,0.18)]"
                 >
                   <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8 lg:p-10">
                     <div className="flex items-start gap-5">

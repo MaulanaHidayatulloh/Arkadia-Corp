@@ -296,7 +296,7 @@ export default function AboutKeyManagement() {
                     type="button"
                     onClick={() => setSelectedLeader(null)}
                     aria-label="Close profile"
-                    className="hidden md:flex absolute rounded-xl right-4 top-4 z-10 h-10 w-10 items-center justify-center border border-black bg-white text-2xl text-black text-bold transition-colors hover:bg-[#F05825] hover:text-white hover:border-0"
+                    className="hidden md:flex absolute rounded-xl right-4 top-4 z-10 h-10 w-10 items-center justify-center border border-black bg-white text-2xl text-black text-bold transition-colors hover:bg-[#F05825] hover:text-white hover:border-0 cursor-pointer"
                   >
                     ×
                   </button>
@@ -308,7 +308,7 @@ export default function AboutKeyManagement() {
                     {selectedLeader.name}
                   </h3>
 
-                  <p className="mt-2 text-sm font-medium leading-6 text-[#B65A2A] sm:text-base">
+                  <p className="mt-2 text-sm font-medium leading-6 text-orange-500 sm:text-base">
                     {selectedLeader.position}
                   </p>
 
@@ -321,7 +321,7 @@ export default function AboutKeyManagement() {
                   <button
                     type="button"
                     onClick={() => setSelectedLeader(null)}
-                    className="mt-6 self-start bg-white border border-black rounded-lg px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-black transition-colors hover:bg-[#F05825] hover:text-white hover:border-[#F05825]"
+                    className="mt-6 self-start bg-white border border-black rounded-lg px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-black transition-colors hover:bg-[#F05825] hover:text-white hover:border-[#F05825] cursor-pointer"
                   >
                     Close Profile
                   </button>

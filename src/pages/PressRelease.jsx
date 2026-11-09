@@ -980,7 +980,7 @@ export default function PressReleaseList() {
                       src={article.image}
                       alt={article.title}
                       loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="h-full w-full object-cover"
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center text-[#B9A895]">

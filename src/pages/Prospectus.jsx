@@ -22,7 +22,7 @@ const Prospectus = () => {
           </div>
 
           {/* Document Item */}
-          <div className="group rounded-2xl relative overflow-hidden border border-black/8 bg-[#FAF9F7] transition-all duration-300 hover:border-orange-500 hover:shadow-[0_15px_45px_-20px_rgba(65,32,1,0.18)]">
+          <div className="group rounded-2xl relative overflow-hidden border border-black/20 bg-white transition-all duration-300 hover:border-orange-500 hover:shadow-[0_15px_45px_-20px_rgba(65,32,1,0.18)]">
             <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8 lg:p-10">
               <div className="flex items-start gap-5">
                 <div className="flex rounded-xl h-14 w-14 shrink-0 items-center justify-center bg-orange-100 text-orange-500 sm:h-16 sm:w-16">

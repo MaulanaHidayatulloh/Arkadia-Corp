@@ -13,7 +13,7 @@ const BusinessDigitalMedia = () => {
             <span className="h-px w-8 bg-orange-500 sm:w-12" />
 
             <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-orange-500 sm:text-xs">
-              Suara.com
+              Arkadia Digital Media
             </span>
 
             <span className="h-px w-8 bg-orange-500 sm:w-12" />

@@ -143,8 +143,8 @@ export default function HomeHero() {
       ))}
 
       {/* Contrast overlay */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-slate-950/90 via-slate-950/65 to-slate-950/20" />
-      <div className="absolute inset-0 z-0 bg-gradient-to-t from-slate-950/45 via-transparent to-slate-950/10" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-slate-950/70 via-slate-950/40 to-slate-950/25" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-t from-slate-950/40 via-transparent to-slate-950/15" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex min-h-[480px] max-w-[1440px] items-center px-6 py-16 sm:min-h-[500px] sm:px-10 sm:py-16 lg:min-h-[540px] lg:px-16 lg:py-16 xl:px-20">
@@ -220,7 +220,7 @@ export default function HomeHero() {
               type="button"
               aria-label="Previous slide"
               onClick={() => goToSlide(activeIndex - 1)}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 transition-colors hover:border-white/60 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 transition-colors hover:border-white/60 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 cursor-pointer"
             >
               <ChevronLeft size={19} />
             </button>
